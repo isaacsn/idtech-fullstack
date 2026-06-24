@@ -1,5 +1,11 @@
-function myFunction() {
-    console.log("Function Ran!")
+function goToSkillPg() {
+    window.location.href = "skillspage.html";
 }
 
-myFunction();
+function goToShopsPg() {
+    window.location.href = "shopspage.html";
+}
+
+function goToVillagersPg() {
+    window.location.href = "vilagerspage.html";
+}

@@ -1,0 +1,74 @@
+body {
+    /*background:linear-gradient(to right, rgb(222, 255, 222),lightgreen,green);*/
+    background:url("https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/stardewbackground.png") no-repeat fixed center center / cover;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    background:lightgrey;
+    margin: 0px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.Navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    gap: 100px;
+}
+
+.ItemNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    gap: 100px;
+}
+
+.NavImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:-10px;
+    gap: 110px;
+}
+
+.SkillTitle {
+    margin-top: 30px;
+}
+
+.Skills {
+    display:flex;
+    flex-direction: column;
+    margin: 100px;
+    gap: 100px;
+}
+
+.HomePgButton {
+    display:flex;
+    flex-direction: column;
+    margin-top: 100px;
+    text-align: center;
+}

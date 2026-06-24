@@ -1,0 +1,18 @@
+table {
+  width: 100%;
+  border-collapse: collapse; /* Merges double lines into a single clean border */
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2; /* Highlights the header row */
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa; /* Creates alternate row colors (zebra striping) */
+}
