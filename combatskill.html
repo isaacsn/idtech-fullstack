@@ -2,21 +2,537 @@
 <html>
     <head>
         <title>Combat</title>
-        <link href="skillpagestyle.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="skillpagestyle.css">
+        <script src="script.js" defer></script>
+        
     </head>
     <body>
+        <nav class="navbar navbar-expand bg-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="stardewwiki.html">Stardew Valley Wiki</a>
+            
+
+                <div class="navigationBar">
+                    <a class="btn btn-success me-2" href="stardewwiki.html">Home</a>
+                    <a class="btn btn-outline-light" href="skillspage.html">Skills</a>
+                </div>
+            </div>
+        </nav>
+        
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="stardewwiki.html">Stardew Valley Wiki</a>
+            </div>
+
+            <div class="navigationBar">
+                <a class="btn btn-outline-light me-2" href="stardewwiki.html">Home</a>
+                <a class="btn btn-success" href="skillspage.html">Skills</a>
+            </div>
+        </nav>
+
         <div class="SkillTitle">
             <h1>Combat</h1>
         </div>
-        <div class="HomePgButton">
-            <a href="skillspage.html" class="btn btn-lg">
+        
+        <h2>Levels</h2>
+
+        <!-- Levels 5 & 10-->
+        <div class="LevelTable">
+            <table>
+                <!-- Level 5 -->
+                <thead>
+                    <tr>
+                        <th colspan="2">Level 5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e6/Fighter.png/36px-Fighter.png">
+                            Fighter
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/69/Scout.png/36px-Scout.png">
+                            Scout
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>All attacks deal 10% more damage.<br>+15 HP</td>
+                        <td>Critical strike chance increased by 50%<br>+0 HP</td>
+                    </tr>
+                </tbody>
+
+                <!-- Level 10 -->
+                <thead>
+                    <tr>
+                        <th colspan="2">Level 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/aa/Brute.png/36px-Brute.png">
+                            Brute
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8f/Acrobat.png/36px-Acrobat.png">
+                            Acrobat
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>Deal 15% more damage.<br>+0 HP</td>
+                        <td>Cooldown on special moves cut in half<br>+0 HP</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/0/0d/Defender.png/36px-Defender.png">
+                            Defender
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/5/57/Desperado.png/36px-Desperado.png">
+                            Desperado
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>+25 HP</td>
+                        <td>Critical strikes are deadlier<br>(2x Strike DMG)<br>+0 HP</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Levels 1-4 & 6-9 -->
+        <div class="LevelTable">     
+            <table>
+                <!-- Level Table (Levels 1-4) -->
+                <thead>
+                    <tr>
+                        <th>Level 1</th>
+                        <th>Level 2</th>
+                        <th>Level 3</th>
+                        <th>Level 4</th>       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/7e/Sturdy_Ring.png/36px-Sturdy_Ring.png">
+                            Sturdy Ring<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/b7/Bug_Steak.png/36px-Bug_Steak.png">
+                            Bug Steak
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/6e/Life_Elixir.png/36px-Life_Elixir.png">
+                            Life Elixir
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e0/Roots_Platter.png/36px-Roots_Platter.png">
+                            Roots Platter
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/13/Warrior_Ring.png/36px-Warrior_Ring.png">
+                            Warrior Ring
+                        </td>
+                    </tr>
+                </tbody>
+                
+                <!-- Level Table (levels 6-9) -->
+                <thead>
+                    <tr>
+                        <th>Level 6</th>
+                        <th>Level 7</th>
+                        <th>Level 8</th>
+                        <th>Level 9</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/79/Slime_Egg-Press.png/36px-Slime_Egg-Press.png">
+                            Slime Egg-Press<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/4b/Oil_of_Garlic.png/36px-Oil_of_Garlic.png">
+                            Oil of Garlic
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/21/Ring_of_Yoba.png/36px-Ring_of_Yoba.png">
+                            Ring of Yoba<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/5/5b/Thorns_Ring.png/36px-Thorns_Ring.png">
+                            Thorns Ring
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/c0/Slime_Incubator.png/36px-Slime_Incubator.png">
+                            Slime Incubator<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/f3/Explosive_Ammo.png/36px-Explosive_Ammo.png">
+                            Explosive Ammo
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/77/Iridium_Band.png/36px-Iridium_Band.png">
+                            Iridium Band<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/86/Squid_Ink_Ravioli.png/36px-Squid_Ink_Ravioli.png">
+                            Squid Ink Ravioli
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Exp Sources</h2>
+
+        <div class="ExpTable">
+            <table id="enemyTable">
+                <thead>
+                    <tr>
+                        <th>
+                            
+                             <button id="enemySortButton"><img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e6/Fighter.png/36px-Fighter.png">Source</button>
+                        </th>
+                        <th>
+                            <button id="combatXPSort">XP</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/7b/Green_Slime.png/36px-Green_Slime.png">
+                            Green Slime
+                        </td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/9a/Dust_Sprite.png/36px-Dust_Sprite.png">
+                            Dust Sprite
+                        </td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/ad/Bat.png/36px-Bat.png">
+                            Bat
+                        </td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/3/36/Frost_Bat.png/36px-Frost_Bat.png">
+                            Frost Bat
+                        </td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/c5/Lava_Bat.png/36px-Lava_Bat.png">
+                            Lava Bat
+                        </td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/d/d4/Stone_Golem.png/36px-Stone_Golem.png">
+                            Stone Golem
+                        </td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/83/Wilderness_Golem.png/36px-Wilderness_Golem.png">
+                            Wilderness Golem
+                        </td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/d/d3/Iridium_Golem.png/36px-Iridium_Golem.png">
+                            Iridium Golem
+                        </td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/0/0c/Grub.png/36px-Grub.png">
+                            Grub
+                        </td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8f/Cave_Fly.png/36px-Cave_Fly.png">
+                            Cave Fly
+                        </td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/9d/Frost_Jelly.png/36px-Frost_Jelly.png">
+                            Blue Slime
+                        </td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/ba/Red_Sludge.png/36px-Red_Sludge.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/27/Purple_Slime.png/36px-Purple_Slime.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/af/Copper_Slime.png/36px-Copper_Slime.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/4d/Iron_Slime.png/36px-Iron_Slime.png">
+                            Red, Purple, Copper, or Iron Slime
+                        </td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/ab/Ghost.png/36px-Ghost.png">
+                            Ghost
+                        </td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/5/5b/Carbon_Ghost.png/36px-Carbon_Ghost.png">
+                            Carbon Ghost
+                        </td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/3/3a/Duggy.png/36px-Duggy.png">
+                            Duggy
+                        </td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/d/d4/Rock_Crab.png/36px-Rock_Crab.png">
+                            Rock Crab
+                        </td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/41/Truffle_Crab.png/36px-Truffle_Crab.png">
+                            Truffle Crab
+                        </td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/1b/Lava_Crab.png/36px-Lava_Crab.png">
+                            Lava Crab
+                        </td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/ef/Iridium_Crab.png/36px-Iridium_Crab.png">
+                            Iridium Crab
+                        </td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/69/Squid_Kid.png/36px-Squid_Kid.png">
+                            Squid Kid
+                        </td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e0/Shadow_Brute.png/36px-Shadow_Brute.png">
+                            Shadow Brute
+                        </td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/11/Shadow_Shaman.png/36px-Shadow_Shaman.png">
+                            Shadow Shaman
+                        </td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/23/Skeleton.png/36px-Skeleton.png">
+                            Skeleton
+                        </td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e5/Metal_Head.png/36px-Metal_Head.png">
+                            Metal Head
+                        </td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/7d/Bug.png/36px-Bug.png">
+                            Bug
+                        </td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/70/Mummy.png/36px-Mummy.png">
+                            Mummy
+                        </td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/95/Big_Purple_Slime.png/36px-Big_Purple_Slime.png">
+                            Big Slime
+                        </td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/89/Serpent.png/36px-Serpent.png">
+                            Serpent
+                        </td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/62/Mutant_Grub.png/36px-Mutant_Grub.png">
+                            Mutant Grub
+                        </td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/69/Mutant_Fly.png/36px-Mutant_Fly.png">
+                            Mutant Fly
+                        </td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/67/Pepper_Rex.png/36px-Pepper_Rex.png">
+                            Pepper Rex
+                        </td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/14/Haunted_Skull.png/36px-Haunted_Skull.png">
+                            Haunted Skull
+                        </td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/5/57/Tiger_Slime.png/36px-Tiger_Slime.png">
+                            Tiger Slime
+                        </td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/eb/Lava_Lurk.png/36px-Lava_Lurk.png">
+                            Lava Lurk
+                        </td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/ef/Hot_Head.png/36px-Hot_Head.png">
+                            Hot Head
+                        </td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/f2/Magma_Sprite.png/36px-Magma_Sprite.png">
+                            Magma Sprite
+                        </td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/41/Magma_Duggy.png/36px-Magma_Duggy.png">
+                            Magma Duggy
+                        </td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/5/58/Magma_Sparker.png/36px-Magma_Sparker.png">
+                            Magma Sparker
+                        </td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/4a/False_Magma_Cap.png/36px-False_Magma_Cap.png">
+                            False Magma Cap
+                        </td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/27/Dwarvish_Sentry.png/36px-Dwarvish_Sentry.png">
+                            Dwarvish Sentry
+                        </td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/42/Putrid_Ghost.png/36px-Putrid_Ghost.png">
+                            Putrid Ghost
+                        </td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/a4/Shadow_Sniper.png/36px-Shadow_Sniper.png">
+                            Shadow Sniper
+                        </td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/84/Spider.png/36px-Spider.png">
+                            Spider
+                        </td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/13/Stick_Bug.png/36px-Stick_Bug.png">
+                            Stick Bug
+                        </td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/28/Royal_Serpent.png/36px-Royal_Serpent.png">
+                            Royal Serpent
+                        </td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/79/Blue_Squid.png/36px-Blue_Squid.png">
+                            Blue Squid
+                        </td>
+                        <td>15</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="HomePgButton container">
+            <a href="skillspage.html" class="btn btn-success btn-lg">
                 Back to skills page
             </a>
-            <a href="stardewwiki.html" class="btn btn-lg">
+            <a href="stardewwiki.html" class="btn btn-success btn-lg">
                 Go to home page
             </a>
         </div>
         
+        
+
     </body>
 </html>

@@ -4,9 +4,21 @@
         <title>Farming</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="skillpagestyle.css">
-        
+        <script src="script.js" defer></script>
     </head>
     <body>
+        <nav class="navbar navbar-expand bg-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="stardewwiki.html">Stardew Valley Wiki</a>
+            
+
+                <div class="navigationBar">
+                    <a class="btn btn-success me-2" href="stardewwiki.html">Home</a>
+                    <a class="btn btn-outline-light" href="skillspage.html">Skills</a>
+                </div>
+            </div>
+        </nav>
+
         <div class="SkillTitle">
             <h1>Farming</h1>
         </div>
@@ -188,7 +200,7 @@
 
         <div class="ExpTable">
             <!-- Spring -->
-            <table>
+            <table id="springFarmingTable">
                 <thead>
                     <tr>
                         <th colspan="2">Spring</th>
@@ -197,11 +209,13 @@
                 <tbody>
                     <tr>
                         <th>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/b2/Tiller.png/36px-Tiller.png">
-                            Crop
+                            <button id="springCropSortButton">
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/b2/Tiller.png/36px-Tiller.png">
+                                Crop
+                            </button>
                         </th>
                         <th>
-                            XP
+                            <button id="farmingXPSortSpring">XP</button>
                         </th>
                     </tr>
                     <tr>
@@ -268,7 +282,7 @@
             </table>
 
             <!-- Summer -->
-            <table>
+            <table id="summerFarmingTable">
                 <thead>
                     <tr>
                         <th colspan="2">Summer</th>
@@ -277,11 +291,13 @@
                 <tbody>
                     <tr>
                         <th>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/b2/Tiller.png/36px-Tiller.png">
-                            Crop
+                            <button id="summerCropSortButton">
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/b2/Tiller.png/36px-Tiller.png">
+                                Crop
+                            </button>
                         </th>
                         <th>
-                            XP
+                            <button id="farmingXPSortSummer">XP</button>
                         </th>
                     </tr>
                     <tr>
@@ -364,7 +380,7 @@
             </table>
 
             <!-- Fall -->
-            <table>
+            <table id="fallFarmingTable">
                 <thead>
                     <tr>
                         <th colspan="2">Fall</th>
@@ -373,11 +389,13 @@
                 <tbody>
                     <tr>
                         <th>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/b2/Tiller.png/36px-Tiller.png">
-                            Crop
+                            <button id="fallCropSortButton">
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/b2/Tiller.png/36px-Tiller.png">
+                                Crop
+                            </button>
                         </th>
                         <th>
-                            XP
+                            <button id="farmingXPSortFall">XP</button>
                         </th>
                     </tr>
                     <tr>
