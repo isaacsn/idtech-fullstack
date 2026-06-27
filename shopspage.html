@@ -2,12 +2,54 @@
 <html>
     <head>
         <title>Shops</title>
+        <link href="shoppagestyle.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script href="script.js" defer></script>
     </head>
     <body>
-        <h1>Shops</h1>
-        <a href="stardewwiki.html" class="btn btn-success btn-lg">
-            Go to home page
-        </a>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="stardewwiki.html">Stardew Valley Wiki</a>
+        
+                <div class="navigationBar">
+                    <a class="btn btn-success me-2 navHome" href="stardewwiki.html">Home</a>
+                    <a class="btn btn-success me-2 navButton" href="skillspage.html">Skills</a>
+                    <a class="btn btn-outline-light navHome" href="shopspage.html">Shops</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="Title">
+            <h1>Shops</h1>
+        </div>
+
+        <div class="Headings">
+            <h2>Pages</h2>
+        </div>
+
+        <div class="Navigation">
+            <h3>Carpenter's Shop</h3>
+            <h3>Blacksmith</h3>
+            <h3>Pierre's</h3>
+        </div>
+
+        <div class="NavImg">
+            <a href="carpenter.html" class="btn btn-success btn-lg shopPgNavButton">
+                <img src="https://stardewvalleywiki.com/mediawiki/images/d/d1/Robin_Icon.png" alt="Carpenter's Shop">
+            </a>
+            <a href="blacksmith.html" class="btn btn-success btn-lg shopPgNavButton">
+                <img src="https://stardewvalleywiki.com/mediawiki/images/7/74/Clint_Icon.png" alt="Blacksmith">
+            </a>
+            <a href="pierre.html" class="btn btn-success btn-lg shopPgNavButton">
+                <img src="https://stardewvalleywiki.com/mediawiki/images/c/cf/Pierre_Icon.png" alt="Pierre's">
+            </a>
+        </div>
+
+        <div class="HomePgButton">
+            <a href="stardewwiki.html" class="btn btn-success btn-lg">
+                Go to home page
+            </a>
+        </div>
+            
     </body>
 </html>
