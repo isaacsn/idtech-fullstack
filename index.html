@@ -1,42 +1,141 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            Bird Page
-        </title>
-        <link rel="stylesheet" href="style.css">
-        <script>
-            /*answer = prompt("How big do you want to go with the random number?")
-            answer = int(answer)
-
-            function diceRoll(maxNum) {
-                randomNumber = Math.floor(Math.random() * (maxNum + 1));
-                return(randomNumber);
-            }
-
-            alert("The number is: " + diceRoll(answer));*/
-        </script>
+        <title>Stardew Valley Wiki</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="stardewwikistyle.css">
+        <script src="script.js"></script>
     </head>
     <body>
-        <!-- This is a page header-->
-        <h1>Birds</h1>
-
-        <h2>Northern Cardinal</h2>
-        <a href="https://en.wikipedia.org/wiki/Northern_cardinal">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw-qzYG_Vxi-0ONqXKcRuk4otd6cRC34wLJqraf8koEvMdfkRnbkEOxcjvKGgxkGXKdR4jjXcDV-OLN0AEM-jjXRc0xj0vMEyvhAwVsbl8&s=10"
-            alt="Northern cardinal">
-        </a>
-
-        <h2>Blue Jay</h2>
-        <a href="https://en.wikipedia.org/wiki/Blue_jay">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Q4QHVH7HlK3y8wxI84U02CWDt5tUfF5K9z5VwjJWYyNNBaqTs-oA8Dtmzka_p1l0iIpUVP2pPyA-YLpP9AELJAslav2mxR6aSdUBtGXdGg&s=10"
-            alt="Blue Jay">
-        </a>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="stardewwiki.html">Stardew Valley Wiki</a>
         
-        <h2>Canary</h2>
-        <a href="https://en.wikipedia.org/wiki/Domestic_canary">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNTRNafklHW_2gCBGqZ_b_L3wU80ndl74u6BXzgl7SWw&s=10"
-            alt="Canary">
-        </a>
+                <div class="navigationBar">
+                    <a class="btn btn-outline-light navButton" href="stardewwiki.html">Home</a>
+                    <div class="nav-dropdown">
+                        <a class="btn btn-success navButton" href="skillspage.html">Skills</a>
+                        <ul class="submenu">
+                            <li><a href="farmingskill.html">Farming</a></li>
+                            <li><a href="foragingskill.html">Foraging</a></li>
+                            <li><a href="fishingskill.html">Fishing</a></li>
+                            <li><a href="miningskill.html">Mining</a></li>
+                            <li><a href="combatskill.html">Combat</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-dropdown">
+                        <a class="btn btn-success navButton" href="shopspage.html">Shops</a>
+                        <ul class="submenu">
+                            <div class="nav-subdropdown">
+                                <li><a href="carpenter.html" class="submenuExpander">Carpenter's Shop</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="carpenter-buildings.html">Buildings</a></li>
+                                    <li><a href="carpenter-homeupgrade.html">Home Upgrades</a></li>
+                                    <li><a href="carpenter-items.html">Item Stock</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-subdropdown">
+                                <li><a href="blacksmith.html">Blacksmith</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="blacksmith-tool.html">Tool Upgrades</a></li>
+                                    <li><a href="blacksmith-items.html">Item Stock</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-subdropdown">
+                                <li><a href="pierre.html">Pierre's</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="pierre-yearstock.html">Yearly Stock</a></li>
+                                    <li><a href="pierre-seasonstock.html">Seasonal Stock</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <!-- Items -->  
+                    <div class="nav-dropdown">
+                        <a class="btn btn-success navButton">Items</a>
+                        <ul class="submenu">
+                            <div class="nav-subdropdown">
+                                <li><a href="fishes.html" class="submenuExpander">Fish</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="fishing-pole-fish.html">Fishing Pole Fish</a></li>
+                                    <li><a href="crab-pot-fish.html">Crab Pot Fish</a></li>
+                                    <li><a href="legendary-fish.html">Legendary Fish</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-subdropdown">
+                                <li><a href="forageables.html">Forageables</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="blacksmith-tool.html">Tool Upgrades</a></li>
+                                    <li><a href="blacksmith-items.html">Item Stock</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-subdropdown">
+                                <li><a href="crops.html">Crops</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="pierre-yearstock.html">Yearly Stock</a></li>
+                                    <li><a href="pierre-seasonstock.html">Seasonal Stock</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="Title">
+            <h1>Stardew Valley Wiki</h1>
+        </div>
+
+        <div class="Headings">
+            <h2>Pages</h2>
+        </div>
+        
+
+        <div class="Navigation">
+            <h3>Skills</h3>
+            <h3>Shops</h3>
+            <h3>Villagers</h3>
+        </div>
+
+        <div class="NavImg">
+            <a href="skillspage.html" class="btn btn-success btn-lg homePgNavButton">
+                <img src="https://stardewvalleywiki.com/mediawiki/images/6/69/Scout.png" alt="Skills">
+            </a>
+            <a href="shopspage.html" class="btn btn-success btn-lg homePgNavButton">
+                <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/5/52/ShippingBox.png/48px-ShippingBox.png" alt="Shops">
+            </a>
+            <a href="villagerspage.html" class="btn btn-success btn-lg homePgNavButton">
+                <img src="https://stardewvalleywiki.com/mediawiki/images/6/63/Abigail_Icon.png" alt="Villagers">
+            </a>
+        </div>
+
+        <div class="Headings">
+            <h2>Items</h2>
+        </div>
+        
+        <div class="ItemNav">
+            <h3>Fish</h3>
+            <h3>Crops</h3>
+            <h3>Forageables</h3>
+        </div>
+
+        <div class="NavImg">
+            <a href="fishes.html" class="btn btn-success btn-lg homePgNavButton">
+                <img src="https://stardewvalleywiki.com/mediawiki/images/8/82/Bream.png" alt="Skills">
+            </a>
+            <a href="crops.html" class="btn btn-success btn-lg homePgNavButton">
+                <img src="https://stardewvalleywiki.com/mediawiki/images/f/f8/Corn.png" alt="Shops">
+            </a>
+            <a href="forageables.html" class="btn btn-success btn-lg homePgNavButton">
+                <img src="https://stardewvalleywiki.com/mediawiki/images/9/90/Wild_Horseradish.png" alt="Villagers">
+            </a>
+        </div>
+
+        <div class="Navigation">
+            <h3></h3>
+        </div>
+        
     </body>
 </html>
