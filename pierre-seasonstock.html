@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Carpenter's Shop</title>
+        <title>Pierre's General Store Seasonal Items</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="shoppagestyle.css" rel="stylesheet">
         <script src="script.js" defer></script>
@@ -12,7 +12,7 @@
                 <a class="navbar-brand" href="stardewwiki.html">Stardew Valley Wiki</a>
         
                 <div class="navigationBar">
-                    <a class="btn btn-success navButton" href="stardewwiki.html">Home</a>
+                    <a class="btn btn-success navHome" href="stardewwiki.html">Home</a>
                     <div class="nav-dropdown">
                         <a class="btn btn-success navButton" href="skillspage.html">Skills</a>
                         <ul class="submenu">
@@ -24,7 +24,7 @@
                         </ul>
                     </div>
                     <div class="nav-dropdown">
-                        <a class="btn btn-outline-light navButton" href="shopspage.html">Shops</a>
+                        <a class="btn btn-outline-light navHome" href="shopspage.html">Shops</a>
                         <ul class="submenu">
                             <div class="nav-subdropdown">
                                 <li><a href="carpenter.html" class="submenuExpander">Carpenter's Shop</a></li>
@@ -55,453 +55,544 @@
         </nav>
 
         <div class="Title">
-            <h1>Carpenter's Shop</h1>
+            <h1>Pierre's General Store</h1>
         </div>
 
         <div class="Headings">
             <h2>Items</h2>
         </div>
         
-        <!-- Home Upgrades -->
+        <!-- Spring -->
         <div class="heading">
-            <h3>Static List</h3>
+            <h3>Spring</h3>
         </div>
 
         <div class="ItemTable">
-            <table id="carpenterItemTable">
+            <table id="pierreSpringItemTable">
                 <thead>
                     <tr>
                         <th>
-                            <button id="carpenterItemSortButton">Name</button>
+                            <button id="pierreSpringItemSortButton">Name</button>
                         </th>
                         <th>
-                            <button id="carpenterItemCostSort">Cost</button>
+                            <button id="pierreSpringItemCostSort">In season</button>
+                        </th>
+                        <th>
+                            <button id="pierreSpringItemCostOOSSort">Out of season (With missing stock list)</button>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/df/Wood.png">
-                            Wood
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d3/Parsnip_Seeds.png">
+                            Parsnip Seeds
                         </td>
                         <td>
-                            Year 1: <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png"> 
-                            10g<br>
-                            Year 2+: <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            75g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            150g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/26/Bean_Starter.png">
+                            Bean Starter
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            150g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            250g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/bb/Cauliflower_Seeds.png">
+                            Cauliflower Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            150g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            250g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/4/44/Potato_Seeds.png">
+                            Potato Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            400g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            750g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/4/42/Tulip_Bulb.png">
+                            Tulip Bulb
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            400g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            750g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/00/Kale_Seeds.png">
+                            Kale Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            400g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            750g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/95/Jazz_Seeds.png">
+                            Jazz Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            400g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            750g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d5/Garlic_Seeds.png">
+                            Garlic Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            400g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            750g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/84/Rice_Shoot.png">
+                            Rice Shoot
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            400g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            750g
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Summer -->
+        <div class="heading">
+            <h3>Summer</h3>
+        </div>
+
+        <div class="ItemTable">
+            <table id="pierreSummerItemTable">
+                <thead>
+                    <tr>
+                        <th>
+                            <button id="pierreSummerItemSortButton">Name</button>
+                        </th>
+                        <th>
+                            <button id="pierreSummerItemCostSort">In season</button>
+                        </th>
+                        <th>
+                            <button id="pierreSummerItemCostOOSSort">Out of season (With missing stock list)</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Melon_Seeds.png">
+                            Melon Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            80g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            120g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/e3/Tomato_Seeds.png">
+                            Tomato Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            10g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            75g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/81/Blueberry_Seeds.png">
+                            Blueberry Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            80g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            120g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/67/Pepper_Seeds.png">
+                            Pepper Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            40g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            60g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/2b/Wheat_Seeds.png">
+                            Wheat Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            10g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            15g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/b1/Radish_Seeds.png">
+                            Radish Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            60g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            60g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/a2/Poppy_Seeds.png">
+                            Poppy Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            100g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            150g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/85/Spangle_Seeds.png">
+                            Spangle Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
                             50g
                         </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            75g
+                        </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d4/Stone.png">
-                            Stone
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9b/Hops_Starter.png">
+                            Hops Starter
                         </td>
                         <td>
-                            Year 1: <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png"> 
-                            20g<br>
-                            Year 2+: <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            60g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            90g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d1/Corn_Seeds.png">
+                            Corn Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            150g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            225g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/1f/Sunflower_Seeds.png">
+                            Sunflower Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            200g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            300g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/ec/Red_Cabbage_Seeds.png">
+                            Red Cabbage Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
                             100g
                         </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/fc/Basic_Window.png/36px-Basic_Window.png">
-                            Basic Window
-                        </td>
                         <td>
                             <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            300g
+                            150g
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/3/3b/Small_Window.png/36px-Small_Window.png">
-                            Small Window
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            300g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/15/Calendar.png/36px-Calendar.png">
-                            Calendar
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            2,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/ea/Workbench.png/36px-Workbench.png">
-                            Workbench
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            2,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/6e/Wood_Chipper.png/36px-Wood_Chipper.png">
-                            Wood Chipper
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            1,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/4d/Mini-Fridge.png/36px-Mini-Fridge.png">
-                            Mini-Fridge
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            3,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/9e/Telephone.png/36px-Telephone.png">
-                            Telephone
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            2,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/20/Floor_TV.png/48px-Floor_TV.png">
-                            Floor TV
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            700g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/f9/Budget_TV.png/48px-Budget_TV.png">
-                            Budget TV
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            750g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/be/Plasma_TV.png/48px-Plasma_TV.png">
-                            Plasma TV
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            4,500g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e8/Furniture_Catalogue.png/48px-Furniture_Catalogue.png">
-                            Furniture Catalogue
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e7/Seasonal_Plant_5_Spring.png/36px-Seasonal_Plant_5_Spring.png">
-                            Seasonal Plant
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            400g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/77/Basic_Log.png/36px-Basic_Log.png">
-                            Basic Log
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            250g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/7/78/Log_Section.png/36px-Log_Section.png">
-                            Log Section
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            750g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/97/Brick_Fireplace.png/36px-Brick_Fireplace.png">
-                            Brick Fireplace
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            1,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/c2/Stone_Fireplace.png/36px-Stone_Fireplace.png">
-                            Stone Fireplace
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            1,500g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/66/Stove_Fireplace.png/36px-Stove_Fireplace.png">
-                            Stove Fireplace
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            3,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/6f/Deluxe_Red_Double_Bed.png/48px-Deluxe_Red_Double_Bed.png">
-                            Deluxe Red Double Bed
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            6,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/25/Single_Bed.png/36px-Single_Bed.png">
-                            Bed
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            500g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/ba/Double_Bed.png/48px-Double_Bed.png">
-                            Double Bed
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            2,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/25/Single_Bed.png/36px-Single_Bed.png">
-                            Child Bed
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            2,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/3/34/Wooden_Brazier.png">
-                            Wooden Brazier Recipe
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            250g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/1a/Stone_Brazier.png">
-                            Stone Brazier Recipe
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            400g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/78/Barrel_Brazier.png">
-                            Barrel Brazier Recipe
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            800g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/f2/Stump_Brazier.png">
-                            Stump Brazier Recipe
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            800g
-                        </td>
-                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+        <!-- Fall -->
+        <div class="heading">
+            <h3>Fall</h3>
+        </div>
+
+        <div class="ItemTable">
+            <table id="pierreFallItemTable">
+                <thead>
+                    <tr>
+                        <th>
+                            <button id="pierreFallItemSortButton">Name</button>
+                        </th>
+                        <th>
+                            <button id="pierreFallItemCostSort">In season</button>
+                        </th>
+                        <th>
+                            <button id="pierreFallItemCostOOSSort">Out of season (With missing stock list)</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/b7/Gold_Brazier.png">
-                            Gold Brazier Recipe
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/f9/Eggplant_Seeds.png">
+                            Eggplant Seeds
                         </td>
                         <td>
                             <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            1,000g
-                        </td>
-                    </tr><tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/3/3c/Carved_Brazier.png">
-                            Carved Brazier Recipe
+                            20g
                         </td>
                         <td>
                             <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            2,000g
+                            30g
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/e6/Skull_Brazier.png">
-                            Skull Brazier Recipe
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d1/Corn_Seeds.png">
+                            Corn Seeds
                         </td>
                         <td>
                             <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            3,000g
+                            150g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            225g
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/e0/Marble_Brazier.png">
-                            Marble Brazier Recipe
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            5,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c8/Wood_Lamp-post.png">
-                            Wood Lamp-post Recipe
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            500g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/b0/Iron_Lamp-post.png">
-                            Iron Lamp-post Recipe
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            1,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/58/Wood_Floor.png">
-                            Wood Floor Recipe
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/99/Pumpkin_Seeds.png">
+                            Pumpkin Seeds
                         </td>
                         <td>
                             <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
                             100g
                         </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            150g
+                        </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/4/4e/Stone_Floor.png">
-                            Stone Floor Recipe
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/21/Bok_Choy_Seeds.png">
+                            Bok Choy Seeds
                         </td>
                         <td>
                             <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            100g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/29/Brick_Floor.png">
-                            Brick Floor Recipe
+                            50g
                         </td>
                         <td>
                             <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            500g
+                            75g
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/1b/Stepping_Stone_Path.png">
-                            Stepping Stone Path Recipe
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/e9/Yam_Seeds.png">
+                            Yam Seeds
                         </td>
                         <td>
                             <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            100g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/85/Straw_Floor.png">
-                            Straw Floor
+                            60g
                         </td>
                         <td>
                             <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200g
+                            90g
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9b/Crystal_Path.png">
-                            Crystal Path Recipe
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/ec/Cranberry_Seeds.png">
+                            Cranberry Seeds
                         </td>
                         <td>
                             <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200g
+                            240g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            360g
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9e/Rustic_Plank_Floor.png">
-                            Rustic Plank Floor Recipe
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/1f/Sunflower_Seeds.png">
+                            Sunflower Seeds
                         </td>
                         <td>
                             <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
                             200g
                         </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            300g
+                        </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/51/Stone_Walkway_Floor.png">
-                            Stone Walkway Floor Recipe
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/8e/Fairy_Seeds.png">
+                            Fairy Seeds
                         </td>
                         <td>
                             <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
                             200g
                         </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            300g
+                        </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/89/Big_Chest.png">
-                            Big Chest Recipe
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/ca/Amaranth_Seeds.png">
+                            Amaranth Seeds
                         </td>
                         <td>
                             <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            5,000g
+                            70g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            105g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/de/Grape_Starter.png">
+                            Grape Starter
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            60g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            90g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/2b/Wheat_Seeds.png">
+                            Wheat Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            10g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            15g
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/71/Artichoke_Seeds.png">
+                            Artichoke Seeds
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            30g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            45g
                         </td>
                     </tr>
                 </tbody>
@@ -509,8 +600,8 @@
         </div>
 
         <div class="HomePgButton container">
-        <a href="carpenter.html" class="btn btn-success btn-lg">
-            Back to Carpenter's Shop page
+        <a href="pierre.html" class="btn btn-success btn-lg">
+            Back to Pierre's General Store page
         </a>
         <a href="shopspage.html" class="btn btn-success btn-lg">
             Go to shops page

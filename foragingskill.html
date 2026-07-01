@@ -8,14 +8,49 @@
         
     </head>
     <body>
-        <nav class="navbar navbar-expand bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="stardewwiki.html">Stardew Valley Wiki</a>
-            
-
+        
                 <div class="navigationBar">
-                    <a class="btn btn-success me-2" href="stardewwiki.html">Home</a>
-                    <a class="btn btn-outline-light" href="skillspage.html">Skills</a>
+                    <a class="btn btn-success navButton" href="stardewwiki.html">Home</a>
+                    <div class="nav-dropdown">
+                        <a class="btn btn-outline-light navButton" href="skillspage.html">Skills</a>
+                        <ul class="submenu">
+                            <li><a href="farmingskill.html">Farming</a></li>
+                            <li><a href="foragingskill.html">Foraging</a></li>
+                            <li><a href="fishingskill.html">Fishing</a></li>
+                            <li><a href="miningskill.html">Mining</a></li>
+                            <li><a href="combatskill.html">Combat</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-dropdown">
+                        <a class="btn btn-success navButton" href="shopspage.html">Shops</a>
+                        <ul class="submenu">
+                            <div class="nav-subdropdown">
+                                <li><a href="carpenter.html" class="submenuExpander">Carpenter's Shop</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="carpenter-buildings.html">Buildings</a></li>
+                                    <li><a href="carpenter-homeupgrade.html">Home Upgrades</a></li>
+                                    <li><a href="carpenter-items.html">Item Stock</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-subdropdown">
+                                <li><a href="blacksmith.html">Blacksmith</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="blacksmith-tool.html">Tool Upgrades</a></li>
+                                    <li><a href="blacksmith-items.html">Item Stock</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-subdropdown">
+                            <li><a href="pierre.html">Pierre's</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="pierre-yearstock.html">Yearly Stock</a></li>
+                                    <li><a href="pierre-seasonstock.html">Seasonal Stock</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>

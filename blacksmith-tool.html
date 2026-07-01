@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Carpenter's Shop</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="shoppagestyle.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="stardewwiki.html">Stardew Valley Wiki</a>
+        
+                <div class="navigationBar">
+                    <a class="btn btn-success navButton" href="stardewwiki.html">Home</a>
+                    <div class="nav-dropdown">
+                        <a class="btn btn-success navButton" href="skillspage.html">Skills</a>
+                        <ul class="submenu">
+                            <li><a href="farmingskill.html">Farming</a></li>
+                            <li><a href="foragingskill.html">Foraging</a></li>
+                            <li><a href="fishingskill.html">Fishing</a></li>
+                            <li><a href="miningskill.html">Mining</a></li>
+                            <li><a href="combatskill.html">Combat</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-dropdown">
+                        <a class="btn btn-outline-light navButton" href="shopspage.html">Shops</a>
+                        <ul class="submenu">
+                            <div class="nav-subdropdown">
+                                <li><a href="carpenter.html" class="submenuExpander">Carpenter's Shop</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="carpenter-buildings.html">Buildings</a></li>
+                                    <li><a href="carpenter-homeupgrade.html">Home Upgrades</a></li>
+                                    <li><a href="carpenter-items.html">Item Stock</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-subdropdown">
+                                <li><a href="blacksmith.html">Blacksmith</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="blacksmith-tool.html">Tool Upgrades</a></li>
+                                    <li><a href="blacksmith-items.html">Item Stock</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-subdropdown">
+                            <li><a href="pierre.html">Pierre's</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="pierre-yearstock.html">Yearly Stock</a></li>
+                                    <li><a href="pierre-seasonstock.html">Seasonal Stock</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="Title">
+            <h1>Carpenter's Shop</h1>
+        </div>
+
+        <div class="Headings">
+            <h2>Farm Buildings</h2>
+        </div>
+        
+        <!-- Tools -->
+        <div class="heading">
+            <h3>Tools</h3>
+        </div>
+
+        <div class="AnimalTable">
+            <table id="coopTable">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Ingredient</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Copper -->
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/8f/Copper_Hoe.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d7/Copper_Pickaxe.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/21/Copper_Axe.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/0d/Copper_Watering_Can.png">
+                        </td>
+                        <td>Copper Tool</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/f1/Copper_Bar.png/36px-Copper_Bar.png">
+                            5 Copper Bars
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            2,000g
+                        </td>
+                    </tr>
+
+                    <!-- Iron -->
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/f5/Steel_Hoe.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d1/Steel_Pickaxe.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/ce/Steel_Axe.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/66/Steel_Watering_Can.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/4/49/Steel_Pan.png">
+                        </td>
+                        <td>Iron Tool</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/6c/Iron_Bar.png/36px-Iron_Bar.png">
+                            5 Iron Bars
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            5,000g
+                        </td>
+                    </tr>
+
+                    <!-- Gold -->
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d3/Gold_Hoe.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d3/Gold_Pickaxe.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/29/Gold_Axe.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/74/Gold_Watering_Can.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/6e/Gold_Pan.png">
+                        </td>
+                        <td>Gold Tool</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/4e/Gold_Bar.png/24px-Gold_Bar.png">
+                            5 Gold Bars
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            10,000g
+                        </td>
+                    </tr>
+
+                    <!-- Iridium -->
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5f/Iridium_Hoe.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/ca/Iridium_Pickaxe.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/8b/Iridium_Axe.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Iridium_Watering_Can.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/66/Iridium_Pan.png">
+                        </td>
+                        <td>Iron Tool</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/c4/Iridium_Bar.png/24px-Iridium_Bar.png">
+                            5 Iridium Bars
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            25,000g
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <!-- Trash Can -->
+        <div class="heading">
+            <h3>Trash Can</h3>
+        </div>
+
+        <div class="AnimalTable">
+            <table id="coopTable">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Ingredient</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Copper -->
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/6f/Trash_Can_Copper.png/36px-Trash_Can_Copper.png">
+                        </td>
+                        <td>Copper Trash CAn</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/f/f1/Copper_Bar.png/36px-Copper_Bar.png">
+                            5 Copper Bars
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            1,000g
+                        </td>
+                    </tr>
+
+                    <!-- Iron -->
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/b/b9/Trash_Can_Steel.png/36px-Trash_Can_Steel.png">
+                        </td>
+                        <td>Iron Trash Can</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/6/6c/Iron_Bar.png/36px-Iron_Bar.png">
+                            5 Iron Bars
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            2,500g
+                        </td>
+                    </tr>
+
+                    <!-- Gold -->
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e0/Trash_Can_Gold.png/36px-Trash_Can_Gold.png">
+                        </td>
+                        <td>Gold Trash Can</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/4e/Gold_Bar.png/24px-Gold_Bar.png">
+                            5 Gold Bars
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            5,000g
+                        </td>
+                    </tr>
+
+                    <!-- Iridium -->
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/ad/Trash_Can_Iridium.png/36px-Trash_Can_Iridium.png">
+                        </td>
+                        <td>Iron Trash Can</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/c/c4/Iridium_Bar.png/24px-Iridium_Bar.png">
+                            5 Iridium Bars
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            12,000g
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="HomePgButton container">
+            <a href="blacksmith.html" class="btn btn-success btn-lg">
+                Back to Blacksmith page
+            </a>
+            <a href="shopspage.html" class="btn btn-success btn-lg">
+                Go to shops page
+            </a>
+            <a href="stardewwiki.html" class="btn btn-success btn-lg">
+                Go to home page
+            </a>
+        </div>
+    </body>
+</html>

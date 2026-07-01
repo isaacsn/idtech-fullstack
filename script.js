@@ -1,3 +1,8 @@
+function getNumber(cell) {
+    const cleaned = cell.textContent.trim().replace(/,/g, "");
+    const n = parseInt(cleaned, 10);
+    return Number.isNaN(n) ? -Infinity : n;
+}
 
 
 
@@ -6,12 +11,11 @@ function sortTable(table, columnIndex, ascending, numeric) {
     const direction = ascending ? 1 : -1;
 
     rows.sort((a, b) => {
+        if(numeric) {
+            return (getNumber(a.cells[columnIndex]) - getNumber(b.cells[columnIndex])) * direction;
+        }
         const cellA = a.cells[columnIndex].textContent.trim();
         const cellB = b.cells[columnIndex].textContent.trim();
-
-        if(numeric) {
-            return (parseInt(cellA, 10) - parseInt(cellB, 10)) * direction;
-        } 
         return cellA.localeCompare(cellB) * direction;
     
     });
@@ -23,14 +27,12 @@ function sortTwoHeaderTable(table, columnIndex, ascending, numeric) {
     const direction = ascending ? 1 : -1;
 
     rows.sort((a, b) => {
+        if(numeric) {
+            return (getNumber(a.cells[columnIndex]) - getNumber(b.cells[columnIndex])) * direction;
+        }
         const cellA = a.cells[columnIndex].textContent.trim();
         const cellB = b.cells[columnIndex].textContent.trim();
-
-        if(numeric) {
-            return (parseInt(cellA, 10) - parseInt(cellB, 10)) * direction;
-        } 
         return cellA.localeCompare(cellB) * direction;
-    
     });
     rows.forEach(row => table.appendChild(row));
 }
@@ -156,4 +158,207 @@ if (springFarmingTable) {
 }
 
 
-/*  */
+/* Carpenter Item List */
+const carpenterItemTable = document.getElementById("carpenterItemTable");
+if (carpenterItemTable) {
+    let carpenterItemSortButton = document.getElementById("carpenterItemSortButton");
+    let carpenterItemCostSort = document.getElementById("carpenterItemCostSort");
+
+    let carpenterItemAscending = true;
+    let carpenterItemCostAscending = true;
+
+    carpenterItemSortButton.addEventListener("click", () => {
+        sortTable(carpenterItemTable, 0, carpenterItemAscending, false);
+        carpenterItemAscending = !carpenterItemAscending;
+    });
+
+    carpenterItemCostSort.addEventListener("click", () => {
+        sortTable(carpenterItemTable, 1, carpenterItemCostAscending, true);
+        carpenterItemCostAscending = !carpenterItemCostAscending;
+    });
+}
+
+/* Pierre Item Lists */
+
+/* Yearly */
+const pierreYearItemTable = document.getElementById("pierreYearItemTable");
+if (pierreYearItemTable) {
+    let pierreItemSortButton = document.getElementById("pierreItemSortButton");
+    let pierreItemCostSort = document.getElementById("pierreItemCostSort");
+
+    let pierreItemAscending = true;
+    let pierreItemCostAscending = true;
+
+    pierreItemSortButton.addEventListener("click", () => {
+        sortTable(pierreYearItemTable, 0, pierreItemAscending, false);
+        pierreItemAscending = !pierreItemAscending;
+    });
+
+    pierreItemCostSort.addEventListener("click", () => {
+        sortTable(pierreYearItemTable, 1, pierreItemCostAscending, true);
+        pierreItemCostAscending = !pierreItemCostAscending;
+    });
+}
+
+/* Seasonaly */
+const pierreSpringItemTable = document.getElementById("pierreSpringItemTable");
+const pierreSummerItemTable = document.getElementById("pierreSummerItemTable");
+const pierreFallItemTable = document.getElementById("pierreFallItemTable");
+if (pierreSpringItemTable) {
+    /* Spring */
+    let pierreSpringItemSortButton = document.getElementById("pierreSpringItemSortButton");
+    let pierreSpringItemCostSort = document.getElementById("pierreSpringItemCostSort");
+    let pierreSpringItemCostOOSSort = document.getElementById("pierreSpringItemCostOOSSort");
+
+    let springAscending = true;
+    let springCropAscending = true;
+    let springCropOOSAscending = true;
+
+    pierreSpringItemSortButton.addEventListener("click", () => {
+        sortTable(pierreSpringItemTable, 0, springAscending, false);
+        springAscending = !springAscending;
+    });
+
+    pierreSpringItemCostSort.addEventListener("click", () => {
+        sortTable(pierreSpringItemTable, 1, springCropAscending, true);
+        springCropAscending = !springCropAscending;
+    });
+
+    pierreSpringItemCostOOSSort.addEventListener("click", () => {
+        sortTable(pierreSpringItemTable, 2, springCropOOSAscending, true);
+        springCropOOSAscending = !springCropOOSAscending;
+    });
+
+
+    /* Summer */
+    let pierreSummerItemSortButton = document.getElementById("pierreSummerItemSortButton");
+    let pierreSummerItemCostSort = document.getElementById("pierreSummerItemCostSort");
+    let pierreSummerItemCostOOSSort = document.getElementById("pierreSummerItemCostOOSSort");
+
+    let summerAscending = true;
+    let summerCropAscending = true;
+    let summerCropOOSAscending = true;
+
+    pierreSummerItemSortButton.addEventListener("click", () => {
+        sortTable(pierreSummerItemTable, 0, summerAscending, false);
+        summerAscending = !summerAscending;
+    });
+
+    pierreSummerItemCostSort.addEventListener("click", () => {
+        sortTable(pierreSummerItemTable, 1, summerCropAscending, true);
+        summerCropAscending = !summerCropAscending;
+    });
+
+    pierreSummerItemCostOOSSort.addEventListener("click", () => {
+        sortTable(pierreSummerItemTable, 2, summerCropOOSAscending, true);
+        summerCropOOSAscending = !summerCropOOSAscending;
+    });
+
+
+    /* Fall */
+    let pierreFallItemSortButton = document.getElementById("pierreFallItemSortButton");
+    let pierreFallItemCostSort = document.getElementById("pierreFallItemCostSort");
+    let pierreFallItemCostOOSSort = document.getElementById("pierreFallItemCostOOSSort");
+
+    let fallAscending = true;
+    let fallCropAscending = true;
+    let fallCropOOSAscending = true;
+
+    pierreFallItemSortButton.addEventListener("click", () => {
+        sortTable(pierreFallItemTable, 0, fallAscending, false);
+        fallAscending = !fallAscending;
+    });
+
+    pierreFallItemCostSort.addEventListener("click", () => {
+        sortTable(pierreFallItemTable, 1, fallCropAscending, true);
+        fallCropAscending = !fallCropAscending;
+    });
+
+    pierreFallItemCostOOSSort.addEventListener("click", () => {
+        sortTable(pierreFallItemTable, 2, fallCropOOSAscending, true);
+        fallCropOOSAscending = !fallCropOOSAscending;
+    });
+}
+
+/* Fish */
+const FishTable = document.getElementById("FishTable");
+if (FishTable) {
+    let FishSortButton = document.getElementById("FishSortButton");
+    let FishPriceSort = document.getElementById("FishPriceSort");
+    let FishFisherPriceSort = document.getElementById("FishFisherPriceSort");
+    let FishAnglerPriceSort = document.getElementById("FishAnglerPriceSort");
+    let FishLocationSort = document.getElementById("FishLocationSort");
+    let FishTimeSort = document.getElementById("FishTimeSort");
+    let FishSeasonSort = document.getElementById("FishSeasonSort");
+    let FishWeatherSort = document.getElementById("FishWeatherSort");
+    let FishDifficultySort = document.getElementById("FishDifficultySort");
+    let FishXPSort = document.getElementById("FishXPSort");
+    let FishUsedInSort = document.getElementById("FishUsedInSort");
+
+    let FishAscending = true;
+    let FishPriceAscending = true;
+    let FishFisherPriceAscending = true;
+    let FishAnglerPriceAscending = true;
+    let FishLocationAscending = true;
+    let FishTimeAscending = true;
+    let FishSeasonAscending = true;
+    let FishWeatherAscending = true;
+    let FishDifficultyAscending = true;
+    let FishXPAscending = true;
+    let FishUsedInAscending = true;
+
+    FishSortButton.addEventListener("click", () => {
+        sortTable(FishTable, 0, FishAscending, false);
+        FishAscending = !FishAscending;
+    });
+
+    FishPriceSort.addEventListener("click", () => {
+        sortTable(FishTable, 1, FishPriceAscending, true);
+        FishPriceAscending = !FishPriceAscending;
+    });
+
+    FishFisherPriceSort.addEventListener("click", () => {
+        sortTable(FishTable, 2, FishFisherPriceAscending, true);
+        FishFisherPriceAscending = !FishFisherPriceAscending;
+    });
+
+    FishAnglerPriceSort.addEventListener("click", () => {
+        sortTable(FishTable, 3, FishAnglerPriceAscending, true);
+        FishAnglerPriceAscending = !FishAnglerPriceAscending;
+    });
+
+    FishLocationSort.addEventListener("click", () => {
+        sortTable(FishTable, 4, FishLocationAscending, false);
+        FishLocationAscending = !FishLocationAscending;
+    });
+
+    FishTimeSort.addEventListener("click", () => {
+        sortTable(FishTable, 5, FishTimeAscending, false);
+        FishTimeAscending = !FishTimeAscending;
+    });
+
+    FishSeasonSort.addEventListener("click", () => {
+        sortTable(FishTable, 6, FishSeasonAscending, false);
+        FishSeasonAscending = !FishSeasonAscending;
+    });
+
+    FishWeatherSort.addEventListener("click", () => {
+        sortTable(FishTable, 7, FishWeatherAscending, false);
+        FishWeatherAscending = !FishWeatherAscending;
+    });
+
+    FishDifficultySort.addEventListener("click", () => {
+        sortTable(FishTable, 8, FishDifficultyAscending, true);
+        FishDifficultyAscending = !FishDifficultyAscending;
+    });
+
+    FishXPSort.addEventListener("click", () => {
+        sortTable(FishTable, 9, FishXPAscending, true);
+        FishXPAscending = !FishXPAscending;
+    });
+
+    FishUsedInSort.addEventListener("click", () => {
+        sortTable(FishTable, 10, FishUsedInAscending, false);
+        FishUsedInAscending = !FishUsedInAscending;
+    });
+}
