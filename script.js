@@ -362,3 +362,113 @@ if (FishTable) {
         FishUsedInAscending = !FishUsedInAscending;
     });
 }
+
+/* Sashimi Table */
+const FishSashimi = document.getElementById("FishSashimi");
+if (FishSashimi) {
+    let FishSashimiSort = document.getElementById("FishSashimiSort");
+    let FishSashimiNoProfSort = document.getElementById("FishSashimiNoProfSort");
+    let FishSashimiFisherSort = document.getElementById("FishSashimiFisherSort");
+    let FishSashimiAnglerSort = document.getElementById("FishSashimiAnglerSort");
+
+    let FishSashimiAscending = true;
+    let FishSashimiNoProfAscending = true;
+    let FishSashimiFisherAscending = true;
+    let FishSashimiAnglerAscending = true;
+
+    FishSashimiSort.addEventListener("click", () => {
+        sortTable(FishSashimi, 0, FishSashimiAscending, false);
+        FishSashimiAscending = !FishSashimiAscending;
+    });
+
+    FishSashimiNoProfSort.addEventListener("click", () => {
+        sortTable(FishSashimi, 1, FishSashimiNoProfAscending, false);
+        FishSashimiNoProfAscending = !FishSashimiNoProfAscending;
+    });
+
+    FishSashimiFisherSort.addEventListener("click", () => {
+        sortTable(FishSashimi, 2, FishSashimiFisherAscending, false);
+        FishSashimiFisherAscending = !FishSashimiFisherAscending;
+    });
+
+    FishSashimiAnglerSort.addEventListener("click", () => {
+        sortTable(FishSashimi, 3, FishSashimiAnglerAscending, false);
+        FishSashimiAnglerAscending = !FishSashimiAnglerAscending;
+    });
+}
+
+/* Legendary Fish */
+const legFishTable = document.getElementById("legFishTable");
+if (legFishTable) {
+    let legFishSortButton = document.getElementById("legFishSortButton");
+    let legFishPriceSort = document.getElementById("legFishPriceSort");
+    let legFishFisherPriceSort = document.getElementById("legFishFisherPriceSort");
+    let legFishAnglerPriceSort = document.getElementById("legFishAnglerPriceSort");
+    let legFishLocationSort = document.getElementById("legFishLocationSort");
+    let legFishTimeSort = document.getElementById("legFishTimeSort");
+    let legFishSeasonSort = document.getElementById("legFishSeasonSort");
+    let legFishWeatherSort = document.getElementById("legFishWeatherSort");
+    let legFishDifficultySort = document.getElementById("legFishDifficultySort");
+    let legFishXPSort = document.getElementById("legFishXPSort");
+
+    let legFishAscending = true;
+    let legFishPriceAscending = true;
+    let legFishFisherPriceAscending = true;
+    let legFishAnglerPriceAscending = true;
+    let legFishLocationAscending = true;
+    let legFishTimeAscending = true;
+    let legFishSeasonAscending = true;
+    let legFishWeatherAscending = true;
+    let legFishDifficultyAscending = true;
+    let legFishXPAscending = true;
+
+    legFishSortButton.addEventListener("click", () => {
+        sortTable(legFishTable, 0, legFishAscending, false);
+        legFishAscending = !legFishAscending;
+    });
+
+    legFishPriceSort.addEventListener("click", () => {
+        sortTable(legFishTable, 1, legFishPriceAscending, false);
+        legFishPriceAscending = !legFishPriceAscending;
+    });
+
+    legFishFisherPriceSort.addEventListener("click", () => {
+        sortTable(legFishTable, 2, legFishFisherPriceAscending, false);
+        legFishFisherPriceAscending = !legFishFisherPriceAscending;
+    });
+
+    legFishAnglerPriceSort.addEventListener("click", () => {
+        sortTable(legFishTable, 3, legFishAnglerPriceAscending, false);
+        legFishAnglerPriceAscending = !legFishAnglerPriceAscending;
+    });
+
+    legFishLocationSort.addEventListener("click", () => {
+        sortTable(legFishTable, 4, legFishLocationAscending, false);
+        legFishLocationAscending = !legFishLocationAscending;
+    });
+
+    legFishTimeSort.addEventListener("click", () => {
+        sortTable(legFishTable, 5, legFishTimeAscending, false);
+        legFishTimeAscending = !legFishTimeAscending;
+    });
+
+    legFishSeasonSort.addEventListener("click", () => {
+        sortTable(legFishTable, 6, legFishSeasonAscending, false);
+        lgeFishSeasonAscending = !legFishSeasonAscending;
+    });
+
+    legFishWeatherSort.addEventListener("click", () => {
+        sortTable(legFishTable, 7, legFishWeatherAscending, false);
+        legFishWeatherAscending = !legFishWeatherAscending;
+    });
+
+    legFishDifficultySort.addEventListener("click", () => {
+        sortTable(legFishTable, 8, legFishDifficultyAscending, true);
+        legFishDifficultyAscending = !legFishDifficultyAscending;
+    });
+
+    legFishXPSort.addEventListener("click", () => {
+        sortTable(legFishTable, 9, legFishXPAscending, true);
+        legFishXPAscending = !legFishXPAscending;
+    });
+}

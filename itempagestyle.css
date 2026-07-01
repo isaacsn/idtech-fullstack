@@ -264,3 +264,28 @@ th {
 .navButton:hover {
     transform: scale(1.05);
 }
+
+.sashimiAlways {
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.sashimiReg {
+    background-color: red;
+    text-align: center;
+}
+
+.sashimiRegSlv {
+    background-color: orange;
+    text-align: center;
+}
+
+.sashimiRegSlvGld {
+    background-color: yellow;
+    text-align: center;
+}
+
+.sashimiNever {
+    background-color: darkred;
+    text-align: center;
+}

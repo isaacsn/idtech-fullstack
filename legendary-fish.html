@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pierre's General Store</title>
+        <title>Legendary Fish</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="shoppagestyle.css" rel="stylesheet">
         <script src="script.js" defer></script>
@@ -12,7 +12,7 @@
                 <a class="navbar-brand" href="stardewwiki.html">Stardew Valley Wiki</a>
         
                 <div class="navigationBar">
-                    <a class="btn btn-success navHome" href="stardewwiki.html">Home</a>
+                    <a class="btn btn-success navButton" href="stardewwiki.html">Home</a>
                     <div class="nav-dropdown">
                         <a class="btn btn-success navButton" href="skillspage.html">Skills</a>
                         <ul class="submenu">
@@ -24,7 +24,7 @@
                         </ul>
                     </div>
                     <div class="nav-dropdown">
-                        <a class="btn btn-outline-light navHome" href="shopspage.html">Shops</a>
+                        <a class="btn btn-success navButton" href="shopspage.html">Shops</a>
                         <ul class="submenu">
                             <div class="nav-subdropdown">
                                 <li><a href="carpenter.html" class="submenuExpander">Carpenter's Shop</a></li>
@@ -50,326 +50,616 @@
                             </div>
                         </ul>
                     </div>
+                    <!-- Items -->
+                    <div class="nav-dropdown">
+                        <a class="btn btn-outline-light navButton">Items</a>
+                        <ul class="submenu">
+                            <div class="nav-subdropdown">
+                                <li><a href="fishes.html" class="submenuExpander">Fish</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="fishing-pole-fish.html">Fishing Pole Fish</a></li>
+                                    <li><a href="crab-pot-fish.html">Crab Pot Fish</a></li>
+                                    <li><a href="legendary-fish.html">Legendary Fish</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-subdropdown">
+                                <li><a href="forageables.html">Forageables</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="blacksmith-tool.html">Tool Upgrades</a></li>
+                                    <li><a href="blacksmith-items.html">Item Stock</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-subdropdown">
+                                <li><a href="crops.html">Crops</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="pierre-yearstock.html">Yearly Stock</a></li>
+                                    <li><a href="pierre-seasonstock.html">Seasonal Stock</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
 
         <div class="Title">
-            <h1>Pierre's General Store</h1>
+            <h1>Fish</h1>
         </div>
 
         <div class="Headings">
-            <h2>Year Round Stock</h2>
+            <h2>Legendary Fish</h2>
         </div>
 
         <div class="ItemTable">
-            <table id="carpenterItemTable">
+            <table id="FishTable">
                 <thead>
                     <tr>
+                        <th><button id="FishSortButton">Name</button></th>
+                        <th><button id="FishPriceSort">Price</button></th>
                         <th>
-                            <button id="carpenterItemSortButton">Name</button>
+                            <button id="FishFisherPriceSort">
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/44/Fisher.png/36px-Fisher.png">
+                                Fisher Profession (+25%)
+                            </button>
                         </th>
                         <th>
-                            <button id="carpenterItemCostSort">Price</button>
+                            <button id="FishAnglerPriceSort">
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/22/Angler_Icon.png/36px-Angler_Icon.png">
+                                Angler Profession (+50%)
+                            </button>
                         </th>
+                        <th><button id="FishLocationSort">Location</button></th>
+                        <th><button id="FishTimeSort">Time</button></th>
+                        <th><button id="FishSeasonSort">Season</button></th>
+                        <th><button id="FishWeatherSort">Weather</button></th>
+                        <th><button id="FishDifficultySort">Difficulty & Behavior</button></th>
+                        <th><button id="FishXPSort">XP</button></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/14/Grass_Starter.png">
-                            Grass Starter
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/dc/Crimsonfish.png">
+                            Crimsonfish
                         </td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            100g
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/dc/Crimsonfish.png">
+                            1,500g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,875g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            2,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            3,000g
                         </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/dc/Crimsonfish.png">
+                            1,875g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            2,343g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            2,812g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            3,750g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/dc/Crimsonfish.png">
+                            2,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            2,812g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            3,375g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            4,500g<br>
+                        </td>
+                        <td>
+                            East Pier on The Beach.<br>Requires Level 5 Fishing
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/85/Summer.png/36px-Summer.png">
+                            Summer
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9a/Sunny.png">
+                            Sun
+                        </td>
+                        <td>95 mixed</td>
+                        <td>170</td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/14/Grass_Starter.png">
-                            Grass Stater Recipe
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/bf/Angler.png">
+                            Angler
                         </td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            1,000g
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/bf/Angler.png">
+                            900g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,125g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            1,325g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            1,800g
                         </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/bf/Angler.png">
+                            1,125g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,406g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            1,687g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            2,250g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/bf/Angler.png">
+                            1,350g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,687g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            2,025g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            2,700g<br>
+                        </td>
+                        <td>
+                            Near the waterfall north of JojaMart.<br>Requires level 3 fishing.
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/5/5d/Fall.png/36px-Fall.png">
+                            Fall
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>85 smooth</td>
+                        <td>155</td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/a9/Sugar.png">
-                            Sugar
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/10/Legend.png">
+                            Legend
                         </td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            100g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/2c/Wheat_Flour.png">
-                            Wheat Flour
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            100g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/da/Rice.png">
-                            Rice
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/06/Oil.png">
-                            Oil
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/fe/Vinegar.png">
-                            Vinegar
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9b/Basic_Fertilizer.png">
-                            BAsic Fertilizer
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            100g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/a0/Quality_Fertilizer.png">
-                            Quality Fertilizer
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            150g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c7/Basic_Retaining_Soil.png">
-                            Basic Retaining Soil
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            100g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/0a/Quality_Retaining_Soil.png">
-                            Quality Retaining Soil
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            150g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/94/Speed-Gro.png">
-                            Speed-Gro
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            100g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/6d/Deluxe_Speed-Gro.png">
-                            Deluxe Speed-Gro
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            150g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/89/Wallpaper_001_Icon.png/54px-Wallpaper_001_Icon.png">
-                            Wallpaper (Random each day)
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/80/Flooring_01_Icon.png/60px-Flooring_01_Icon.png">
-                            Flooring (Random each day)
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/22/Cherry_Sapling.png">
-                            Cherry Sapling
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            3,400g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9d/Apricot_Sapling.png">
-                            Apricot Sapling
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            2,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/08/Orange_Sapling.png">
-                            Orange Sapling
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            4,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/e3/Peach_Sapling.png">
-                            Peach Sapling
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            6,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/10/Pomegranate_Sapling.png">
-                            Pomegranite Sapling
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            6,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/68/Apple_Sapling.png">
-                            Apple Sapling
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            4,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/4/49/Catalogue.png">
-                            Catalogue
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            30,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/02/Dehydrator.png">
-                            Dehydrator Recipe
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/10/Legend.png">
+                            5,000g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            6,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            7,500g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
                             10,000g
                         </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/10/Legend.png">
+                            6,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            7,812g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            9,375g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            12,500g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/10/Legend.png">
+                            7,500g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            9,375g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            11,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            15,000g<br>
+                        </td>
+                        <td>
+                            The Mountain Lake near the log.<br>Requires level 10 fishing.
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9c/Spring.png">
+                            Spring
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/1d/Rain.png">
+                            Rain
+                        </td>
+                        <td>110 mixed</td>
+                        <td>195</td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/83/Bouquet.png">
-                            Boquet
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/fd/Glacierfish.png">
+                            Glacierfish
                         </td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200g
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/fd/Glacierfish.png">
+                            1,000g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            1,500g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            2,000g
                         </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/fd/Glacierfish.png">
+                            1,250<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,562g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            1,875g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            2,500g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/fd/Glacierfish.png">
+                            1,500g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,875g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            2,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            3,000g<br>
+                        </td>
+                        <td>
+                            South end of Arrowhead Island in Cindersap Forest.<br>Requires level 6 fishing.
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/a/a7/Winter.png/36px-Winter.png">
+                            Winter
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>100 mixed</td>
+                        <td>180</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/cb/Mutant_Carp.png">
+                            Mutant Carp
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/cb/Mutant_Carp.png">
+                            1,000g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            1,500g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            2,000g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/cb/Mutant_Carp.png">
+                            1,250<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,562g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            1,875g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            2,500g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/cb/Mutant_Carp.png">
+                            1,500g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,875g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            2,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            3,000g<br>
+                        </td>
+                        <td>
+                            The Sewers
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>
+                            All Seasons
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>80 dart</td>
+                        <td>145</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
         <div class="Headings">
-            <h2>Backpacks</h2>
+            <h2>Legendary Fish II</h2>
         </div>
 
         <div class="ItemTable">
-            <table id="pierreYearItemTable">
+            <table id="legFishTable">
                 <thead>
                     <tr>
+                        <th><button id="legFishSortButton">Name</button></th>
+                        <th><button id="legFishPriceSort">Price</button></th>
                         <th>
-                            <button id="pierreItemSortButton">Name</button>
+                            <button id="legFishFisherPriceSort">
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/44/Fisher.png/36px-Fisher.png">
+                                Fisher Profession (+25%)
+                            </button>
                         </th>
                         <th>
-                            <button id="pierreItemCostSort">Price</button>
+                            <button id="legFishAnglerPriceSort">
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/22/Angler_Icon.png/36px-Angler_Icon.png">
+                                Angler Profession (+50%)
+                            </button>
                         </th>
+                        <th><button id="legFishLocationSort">Location</button></th>
+                        <th><button id="legFishTimeSort">Time</button></th>
+                        <th><button id="legFishSeasonSort">Season</button></th>
+                        <th><button id="legFishWeatherSort">Weather</button></th>
+                        <th><button id="legFishDifficultySort">Difficulty & Behavior</button></th>
+                        <th><button id="legFishXPSort">XP</button></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/b1/Backpack.png">
-                            Large Pack
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/12/Son_of_Crimsonfish.png">
+                            Son of Crimsonfish
                         </td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            2,000g
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/12/Son_of_Crimsonfish.png">
+                            1,500g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,875g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            2,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            3,000g
                         </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/12/Son_of_Crimsonfish.png">
+                            1,875g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            2,343g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            2,812g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            3,750g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/12/Son_of_Crimsonfish.png">
+                            2,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            2,812g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            3,375g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            4,500g<br>
+                        </td>
+                        <td>
+                            East Pier on The Beach.<br>Requires Level 5 Fishing
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>
+                            All Seasons
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>95 mixed</td>
+                        <td>34</td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/3/36/36_Backpack.png">
-                            Deluxe Pack
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/bb/Ms._Angler.png">
+                            Ms. Angler
                         </td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/bb/Ms._Angler.png">
+                            900g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,125g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            1,325g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            1,800g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/bb/Ms._Angler.png">
+                            1,125g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,406g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            1,687g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            2,250g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/bb/Ms._Angler.png">
+                            1,350g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,687g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            2,025g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            2,700g<br>
+                        </td>
+                        <td>
+                            Near the waterfall north of JojaMart.<br>Requires level 3 fishing.
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>
+                            All Seasons
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>85 smooth</td>
+                        <td>31</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/7a/Legend_II.png">
+                            Legend II
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/7a/Legend_II.png">
+                            5,000g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            6,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            7,500g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
                             10,000g
                         </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/7a/Legend_II.png">
+                            6,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            7,812g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            9,375g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            12,500g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/7a/Legend_II.png">
+                            7,500g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            9,375g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            11,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            15,000g<br>
+                        </td>
+                        <td>
+                            The Mountain Lake near the log.<br>Requires level 10 fishing.
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>
+                            All Seasons
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>110 mixed</td>
+                        <td>39</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Glacierfish_Jr..png">
+                            Glacierfish Jr.
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Glacierfish_Jr..png">
+                            1,000g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            1,500g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            2,000g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Glacierfish_Jr..png">
+                            1,250<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,562g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            1,875g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            2,500g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Glacierfish_Jr..png">
+                            1,500g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,875g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            2,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            3,000g<br>
+                        </td>
+                        <td>
+                            South end of Arrowhead Island in Cindersap Forest.<br>Requires level 6 fishing.
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>
+                            All Seasons
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>100 mixed</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/57/Radioactive_Carp.png">
+                            Radioactive Carp
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/57/Radioactive_Carp.png">
+                            1,000g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            1,500g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            2,000g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/57/Radioactive_Carp.png">
+                            1,250<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,562g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            1,875g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            2,500g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/57/Radioactive_Carp.png">
+                            1,500g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            1,875g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            2,250g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            3,000g<br>
+                        </td>
+                        <td>
+                            The Sewers
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>
+                            All Seasons
+                        </td>
+                        <td>
+                            Any
+                        </td>
+                        <td>80 dart</td>
+                        <td>29</td>
                     </tr>
                 </tbody>
             </table>
-        </div>
-
-        <div class="HomePgButton container">
-        <a href="pierre.html" class="btn btn-success btn-lg">
-            Back to Pierre's General Store page
-        </a>
-        <a href="shopspage.html" class="btn btn-success btn-lg">
-            Go to shops page
-        </a>
-        <a href="stardewwiki.html" class="btn btn-success btn-lg">
-            Go to home page
-        </a>
         </div>
     </body>
 </html>

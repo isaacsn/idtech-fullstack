@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pierre's General Store</title>
+        <title>Crab Pot Fish</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="shoppagestyle.css" rel="stylesheet">
         <script src="script.js" defer></script>
@@ -12,7 +12,7 @@
                 <a class="navbar-brand" href="stardewwiki.html">Stardew Valley Wiki</a>
         
                 <div class="navigationBar">
-                    <a class="btn btn-success navHome" href="stardewwiki.html">Home</a>
+                    <a class="btn btn-success navButton" href="stardewwiki.html">Home</a>
                     <div class="nav-dropdown">
                         <a class="btn btn-success navButton" href="skillspage.html">Skills</a>
                         <ul class="submenu">
@@ -24,7 +24,7 @@
                         </ul>
                     </div>
                     <div class="nav-dropdown">
-                        <a class="btn btn-outline-light navHome" href="shopspage.html">Shops</a>
+                        <a class="btn btn-success navButton" href="shopspage.html">Shops</a>
                         <ul class="submenu">
                             <div class="nav-subdropdown">
                                 <li><a href="carpenter.html" class="submenuExpander">Carpenter's Shop</a></li>
@@ -50,310 +50,461 @@
                             </div>
                         </ul>
                     </div>
+                    <!-- Items -->
+                    <div class="nav-dropdown">
+                        <a class="btn btn-outline-light navButton">Items</a>
+                        <ul class="submenu">
+                            <div class="nav-subdropdown">
+                                <li><a href="fishes.html" class="submenuExpander">Fish</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="fishing-pole-fish.html">Fishing Pole Fish</a></li>
+                                    <li><a href="crab-pot-fish.html">Crab Pot Fish</a></li>
+                                    <li><a href="legendary-fish.html">Legendary Fish</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-subdropdown">
+                                <li><a href="forageables.html">Forageables</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="blacksmith-tool.html">Tool Upgrades</a></li>
+                                    <li><a href="blacksmith-items.html">Item Stock</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-subdropdown">
+                                <li><a href="crops.html">Crops</a></li>
+                                <ul class="subsubmenu">
+                                    <li><a href="pierre-yearstock.html">Yearly Stock</a></li>
+                                    <li><a href="pierre-seasonstock.html">Seasonal Stock</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
 
         <div class="Title">
-            <h1>Pierre's General Store</h1>
+            <h1>Fish</h1>
         </div>
 
         <div class="Headings">
-            <h2>Year Round Stock</h2>
+            <h2>Crab Pot Fish</h2>
         </div>
 
         <div class="ItemTable">
-            <table id="carpenterItemTable">
+            <table id="FishTable">
                 <thead>
                     <tr>
-                        <th>
-                            <button id="carpenterItemSortButton">Name</button>
+                        <th rowspan="2"><button id="FishSortButton">Name</button></th>
+                        <th rowspan="2"><button id="FishPriceSort">Price</button></th>
+                        <th rowspan="2">
+                            <button id="FishFisherPriceSort">
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/44/Fisher.png/36px-Fisher.png">
+                                Fisher Profession (+25%)
+                            </button>
                         </th>
-                        <th>
-                            <button id="carpenterItemCostSort">Price</button>
+                        <th rowspan="2">
+                            <button id="FishAnglerPriceSort">
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/2/22/Angler_Icon.png/36px-Angler_Icon.png">
+                                Angler Profession (+50%)
+                            </button>
+                        </th>
+                        <th rowspan="2"><button id="FishLocationSort">Location</button></th>
+                        <th colspan="2">Trap Chance</th>
+                        <th rowspan="2"><button id="FishUsedInSort">Used In</button></th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2"><button id="FishTimeSort">Non-Mariner</button></th>
+                        <th rowspan="2">
+                            <button id="FishTimeSort">
+                                <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/0/03/Mariner.png/36px-Mariner.png">
+                                Mariner
+                            </button>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/14/Grass_Starter.png">
-                            Grass Starter
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/ed/Clam.png">
+                            Clam
                         </td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/ed/Clam.png">
+                            50g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            62g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            75g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
                             100g
                         </td>
-                    </tr>
-                    <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/14/Grass_Starter.png">
-                            Grass Stater Recipe
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/ed/Clam.png">
+                            62g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            77g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            93g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            125g
                         </td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            1,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/a9/Sugar.png">
-                            Sugar
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            100g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/2c/Wheat_Flour.png">
-                            Wheat Flour
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/ed/Clam.png">
+                            75g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            93g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            112g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            150g<br>
                         </td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            100g
+                            Ocean
                         </td>
-                    </tr>
-                    <tr>
+                        <td>9%</td>
+                        <td>14%</td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/da/Rice.png">
-                            Rice
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200g
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/9/95/Chowder.png/36px-Chowder.png">
+                            Chowder
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/06/Oil.png">
-                            Oil
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9f/Lobster.png">
+                            Lobster
                         </td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/f/fe/Vinegar.png">
-                            Vinegar
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9b/Basic_Fertilizer.png">
-                            BAsic Fertilizer
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            100g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/a0/Quality_Fertilizer.png">
-                            Quality Fertilizer
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9f/Lobster.png">
+                            120g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
                             150g
                         </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9f/Lobster.png">
+                            150g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            187g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9f/Lobster.png">
+                            180g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            225g
+                        </td>
+                        <td>
+                            Ocean
+                        </td>
+                        <td>4%</td>
+                        <td>14%</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/0/0a/Lobster_Bisque.png/36px-Lobster_Bisque.png">
+                            Lobster Bisque<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c2/Quests_Icon.png">
+                            "Wanted Lobster" Quest<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/6f/Elliott_Icon.png">
+                            Elliott (Loved Gift)
+                        </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c7/Basic_Retaining_Soil.png">
-                            Basic Retaining Soil
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/53/Crayfish.png">
+                            Crayfish
                         </td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/53/Crayfish.png">
+                            75g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            93g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/53/Crayfish.png">
+                            93g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            116g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/53/Crayfish.png">
+                            112g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            139g
+                        </td>
+                        <td>
+                            Freshwater
+                        </td>
+                        <td>21%</td>
+                        <td>33%</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/6f/Fish_Stew.png">
+                            Fish Stew
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/63/Crab.png">
+                            Crab
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/63/Crab.png">
+                            100g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            125g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/63/Crab.png">
+                            125g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            156g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/63/Crab.png">
+                            150g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            187g
+                        </td>
+                        <td>
+                            Ocean
+                        </td>
+                        <td>8%</td>
+                        <td>14%</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/70/Crab_Cakes.png">
+                            Crab Cakes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/ad/Cockle.png">
+                            Cockle
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/ad/Cockle.png">
+                            50g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            62g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            75g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
                             100g
                         </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/ad/Cockle.png">
+                            62g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            77g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            93g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            125g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/ad/Cockle.png">
+                            75g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            93g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            112g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            150g<br>
+                        </td>
+                        <td>
+                            Ocean
+                        </td>
+                        <td>12%</td>
+                        <td>14%</td>
+                        <td>
+                        </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/0a/Quality_Retaining_Soil.png">
-                            Quality Retaining Soil
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/aa/Mussel.png">
+                            Mussel
                         </td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            150g
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/aa/Mussel.png">
+                            30g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            37g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            45g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            60g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/aa/Mussel.png">
+                            37g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            46g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            56g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            75g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/a/aa/Mussel.png">
+                            45g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            55g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            67g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            90g<br>
+                        </td>
+                        <td>
+                            Ocean
+                        </td>
+                        <td>10%</td>
+                        <td>14%</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/6f/Fish_Stew.png">
+                            Fish Stew
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/94/Speed-Gro.png">
-                            Speed-Gro
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/91/Shrimp.png">
+                            Shrimp
                         </td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/91/Shrimp.png">
+                            60g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            75g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/91/Shrimp.png">
+                            75g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            93g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/91/Shrimp.png">
+                            90g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            112g
+                        </td>
+                        <td>
+                            Ocean
+                        </td>
+                        <td>10%</td>
+                        <td>14%</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/3/3b/Tom_Kha_Soup.png">
+                            Tom Kha Soup<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/8e/Shrimp_Cocktail.png">
+                            Shrimp Cocktail
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d2/Snail.png">
+                            Snail
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d2/Snail.png">
+                            65g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            81g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d2/Snail.png">
+                            81g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            101g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d2/Snail.png">
+                            97g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            121g
+                        </td>
+                        <td>
+                            Freshwater
+                        </td>
+                        <td>20%</td>
+                        <td>33%</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/7/78/Escargot.png">
+                            Escargot<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/0b/Vincent_Icon.png">
+                            Vincent (Loved Gift)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/1d/Periwinkle.png">
+                            Periwinkle
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/1d/Periwinkle.png">
+                            20g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            25g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/1d/Periwinkle.png">
+                            25g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            31g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/1d/Periwinkle.png">
+                            30g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            37g
+                        </td>
+                        <td>
+                            Freshwater
+                        </td>
+                        <td>21%</td>
+                        <td>33%</td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Strange_Bun.png">
+                            Strange Bun<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/6f/Fish_Stew.png">
+                            Fish Stew
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/54/Oyster.png">
+                            Oyster
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/54/Oyster.png">
+                            40g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            50g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            60g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            80g
+                        </td>
+                        <td>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/54/Oyster.png">
+                            50g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            62g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            75g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
                             100g
                         </td>
-                    </tr>
-                    <tr>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/6d/Deluxe_Speed-Gro.png">
-                            Deluxe Speed-Gro
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/5/54/Oyster.png">
+                            60g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/8a/Silver_Quality_Icon.png/36px-Silver_Quality_Icon.png">
+                            75g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/4/47/Gold_Quality_Icon.png/36px-Gold_Quality_Icon.png">
+                            90g<br>
+                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/e/e4/Iridium_Quality_Icon.png/36px-Iridium_Quality_Icon.png">
+                            120g<br>
                         </td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            150g
+                            Ocean
                         </td>
-                    </tr>
-                    <tr>
+                        <td>10%</td>
+                        <td>14%</td>
                         <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/89/Wallpaper_001_Icon.png/54px-Wallpaper_001_Icon.png">
-                            Wallpaper (Random each day)
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/8/80/Flooring_01_Icon.png/60px-Flooring_01_Icon.png">
-                            Flooring (Random each day)
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/2/22/Cherry_Sapling.png">
-                            Cherry Sapling
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            3,400g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/9/9d/Apricot_Sapling.png">
-                            Apricot Sapling
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            2,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/08/Orange_Sapling.png">
-                            Orange Sapling
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            4,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/e/e3/Peach_Sapling.png">
-                            Peach Sapling
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            6,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/1/10/Pomegranate_Sapling.png">
-                            Pomegranite Sapling
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            6,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/6/68/Apple_Sapling.png">
-                            Apple Sapling
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            4,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/4/49/Catalogue.png">
-                            Catalogue
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            30,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/0/02/Dehydrator.png">
-                            Dehydrator Recipe
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            10,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/8/83/Bouquet.png">
-                            Boquet
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            200g
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="Headings">
-            <h2>Backpacks</h2>
-        </div>
-
-        <div class="ItemTable">
-            <table id="pierreYearItemTable">
-                <thead>
-                    <tr>
-                        <th>
-                            <button id="pierreItemSortButton">Name</button>
-                        </th>
-                        <th>
-                            <button id="pierreItemCostSort">Price</button>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/b/b1/Backpack.png">
-                            Large Pack
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            2,000g
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/3/36/36_Backpack.png">
-                            Deluxe Pack
-                        </td>
-                        <td>
-                            <img src="https://stardewvalleywiki.com/mediawiki/images/thumb/1/10/Gold.png/27px-Gold.png">
-                            10,000g
                         </td>
                     </tr>
                 </tbody>
@@ -361,11 +512,8 @@
         </div>
 
         <div class="HomePgButton container">
-        <a href="pierre.html" class="btn btn-success btn-lg">
-            Back to Pierre's General Store page
-        </a>
-        <a href="shopspage.html" class="btn btn-success btn-lg">
-            Go to shops page
+        <a href="fishes.html" class="btn btn-success btn-lg">
+            Back to Fishes page
         </a>
         <a href="stardewwiki.html" class="btn btn-success btn-lg">
             Go to home page
